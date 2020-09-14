@@ -1,0 +1,149 @@
+// out: ../css/yoursite.css, autoprefixer: true, compress: true,
+
+@import (less) '/Modules/grid';
+@import (less) '/Modules/bedrock';
+@import (less) '/Components/buttons';
+@import (less) '/Components/text';
+@import (less) '/Components/inputs';
+@import (less) '/Components/brand-colors';
+@import (less) '/Components/media-queries';
+
+
+/* Header */
+
+header{
+    color: #fff;
+    padding: 1rem;
+}
+
+footer{
+    padding: 1rem;
+}
+
+.mainCover{
+    display: grid;
+    place-items: center;
+    min-height: 60vh;
+}
+
+.k-cover-img{
+    background-color: darkred;
+}
+
+.footer-grid{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+}
+
+.footer-element{
+    display: grid;
+    place-items: center;
+}
+
+.verse-img{
+    display: grid;
+    place-items: center;
+}
+
+.k-cover-img{
+    position: relative;
+    background: linear-gradient(180deg, #1d3488 0%, #1d0c46 100%);
+    -webkit-clip-path: polygon(0% 0%, 480% 0%, 50% 100%, 0% 87%);
+    clip-path: polygon(0% 0%, 480% 0%, 50% 100%, 0% 87%);
+    
+    &:after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: url(/media/img/rtl4.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        mix-blend-mode: soft-light;
+        filter:hue-rotate(2);
+        opacity: 0.5;
+    }
+}
+
+.cover-img2{
+    position: relative;
+    background: linear-gradient(180deg, #1d3488 0%, #1d0c46 100%);
+    -webkit-clip-path: polygon(0% 0%, 480% 60%, 100% 100%, 0% 87%);
+    clip-path: polygon(0% 0%, 480% 60%, 100% 100%, 0% 87%);
+    
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: url(/media/img/bellstolling1.jpg);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        mix-blend-mode: soft-light;
+        filter:hue-rotate(2);
+        opacity: 0.5;
+    }
+}
+
+.cover-img3{
+    position: relative;
+    background: linear-gradient(180deg, #1d3488 0%, #1d0c46 100%);
+    -webkit-clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
+    
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-image: url(/media/img/bellstolling1.jpg);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        mix-blend-mode: soft-light;
+        filter:hue-rotate(2);
+        opacity: 0.5;
+    }
+}
+
+.band-mambers{
+    img{
+        max-height: 256px;
+        filter: grayscale(1);
+    }
+}
+
+.verse1_img{
+    background: url(/media/img/forwhom4.jpg);
+    min-height: 23vh;
+    background-size: cover;
+    background-color: #A68130;
+    background-blend-mode: multiply;
+}
+
+.verse2_img{
+    background: url(/media/img/movie1.jpeg);
+    min-height: 17vh;
+    background-size: cover;
+    background-color: #A68130;
+    background-blend-mode: multiply;
+}
+
+.verse3_img{
+    background: url(/media/img/puente1.jpg);
+    min-height: 47vh;
+    background-size: cover;
+    background-color: #A68130;
+    background-blend-mode: multiply;
+    background-position: center;
+}
